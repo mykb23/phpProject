@@ -1,0 +1,4 @@
+D2 Unknown database 'class190' in file C:\wamp64\www\class1901\connection.php at line 7
+D2 Unknown database 'class190' in file C:\wamp64\www\class1901\connection.php at line 7
+D3 Data too long for column 'token' at row 1 in file C:\wamp64\www\class1901\forgot-password-supply-email-process.php at line 18
+D3 Data too long for column 'token' at row 1 in file C:\wamp64\www\class1901\forgot-password-supply-email-process.php at line 18
