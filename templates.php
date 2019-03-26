@@ -7,14 +7,15 @@
 	require_once 'templates/head.php'; 
 ?>
 <body>
+	<?php	require_once 'templates/sidebar.php'; ?>    
+	<?php	require_once 'templates/sidebar.php'; ?>    
 	<div class="wrapper">
-		<?php	require_once 'templates/sidebar.php'; ?>    
 	    <div class="main-panel">
 	        <?php require_once 'templates/masthead.php'; ?>
 	        <div class="content">
 	            <div class="container-fluid">
 	                <div class="row">
-										<h1 id='pageName'><?php if(isset($pageName)) echo $pageName; ?></h1>
+						<h1 id='pageName'><?php if(isset($pageName)) echo $pageName; ?></h1>
 	                </div>
 	            </div>
 	        </div>

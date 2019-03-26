@@ -11,7 +11,7 @@
 				$additionalMenu .= "
 					<li class='active'>
             <a href='staff-admin.php'>
-                <i class='pe-7s-graph'></i>
+                <i class='icon'></i>
                 <p>Staff Mgt</p>
             </a>
         	</li>
@@ -21,19 +21,19 @@
 				$additionalMenu .= "
 					<li class='active'>
             <a href='student-admin.php'>
-                <i class='pe-7s-graph'></i>
+                <i class='icon'></i>
                 <p>Student Mgt</p>
             </a>
         	</li>
         	<li class='active'>
             <a href='subject-admin.php'>
-                <i class='pe-7s-graph'></i>
+                <i class='icon'></i>
                 <p>Subject Mgt</p>
             </a>
         	</li>
         	<li class='active'>
             <a href='result-admin.php'>
-                <i class='pe-7s-graph'></i>
+                <i class='icon'></i>
                 <p>Result Mgt</p>
             </a>
         	</li>
@@ -43,13 +43,13 @@
 				$additionalMenu .= "
 					<li class='active'>
             <a href='view-result.php'>
-                <i class='pe-7s-graph'></i>
+                <i class='icon-padnote'></i>
                 <p>View Result</p>
             </a>
         	</li>
         	<li class='active'>
             <a href='https://paystack.com/pay/aet' target='_blank'>
-                <i class='pe-7s-graph'></i>
+                <i class='icon-payment'></i>
                 <p>Payment</p>
             </a>
         	</li>
@@ -61,23 +61,23 @@
 		}
 		
 		$sideMenu = "
-		<ul class='nav'>
+		<ul class='list-unstyled'>
         <li class='active'>
             <a href='home.php'>
-                <i class='pe-7s-graph'></i>
+                <i class='icon-home'></i>
                 <p>Home</p>
             </a>
         </li>
         $additionalMenu
         <li class='active'>
             <a href='password-reset.php'>
-                <i class='pe-7s-graph'></i>
+                <i class='icon-lock'></i>
                 <p>Change Password</p>
             </a>
         </li>
         <li class='active'>
             <a href='logout.php'>
-                <i class='pe-7s-graph'></i>
+                <i class='icon-logout'></i>
                 <p>Logout</p>
             </a>
         </li>
@@ -88,13 +88,24 @@
 		$sideMenu = "";
 	}
 ?>
-<div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
+  <nav id="sidebar">
+    <!-- Sidebar Navidation Menus-->
+    <span class="heading">Main</span>
+      <?php echo $sideMenu; ?>
+      <ul class="list-unstyled">
+        <li class="active"><a href="index.html"> <i class="icon-home"></i>Home </a></li>
+        <li><a href="tables.html"> <i class="icon-grid"></i>Staff Mgt </a></li>
+        <li><a href="charts.html"> <i class="fa fa-lock"></i>Change Password </a></li>
+        <li><a href="forms.html"> <i class="icon-padnote"></i>Logout </a></li>
+      </ul>
+  </nav>
+<!-- <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
 	<div class="sidebar-wrapper">
         <div class="logo">
             <a href="home.php" class="simple-text">
-                School Portal
+          
             </a>
         </div>
-				<?php echo $sideMenu; ?>
-	</div>
-</div>
+      </div>
+    </div> -->
+    

@@ -5,6 +5,7 @@
 		$username = $_POST['studentNo'];
 		$password = $_POST['password'];
 		$password = md5(SALT.$password);
+		var_dump($username); exit;
 		
 		$query = "select * from login WHERE id = '$username' AND password = '$password'";
 		$result = mysqli_query($connection, $query);

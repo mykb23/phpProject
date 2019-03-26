@@ -1,21 +1,9 @@
-<!--   Core JS Files   -->
-  <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-
-	<!--  Checkbox, Radio & Switch Plugins -->
-	<script src="assets/js/bootstrap-checkbox-radio-switch.js"></script>
-
-	<!--  Charts Plugin -->
-	<script src="assets/js/chartist.min.js"></script>
-
-    <!--  Notifications Plugin    -->
-    <script src="assets/js/bootstrap-notify.js"></script>
-
-    <!--  Google Maps Plugin    -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
-    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
-	<script src="assets/js/light-bootstrap-dashboard.js"></script>
-
-	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
-	<script src="assets/js/demo.js"></script>
+    <!-- JavaScript files-->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/vendor/jquery.cookie/jquery.cookie.js"> </script> -->
+    <!-- <script src="assets/vendor/chart.js/Chart.min.js"></script> -->
+    <!-- <script src="assets/vendor/jquery-validation/jquery.validate.min.js"></script> -->
+    <!-- <script src="assets/js/charts-home.js"></script> -->
+    <!-- <script src="assets/js/front.js"></script> -->

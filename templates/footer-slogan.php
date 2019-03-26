@@ -1,17 +1,22 @@
 <footer class="footer">
-    <div class="container-fluid">
+  <div class="footer__block block no-margin-bottom">
+    <div class="container-fluid text-right">
         <nav class="pull-left">
-            <ul>
-                <li>
-                    <a href="#">
-                        <?php if(isset($pageName)) echo $pageName; ?>
-                    </a>
-                </li>
-
-            </ul>
+          <ul>
+            <li>
+              <a href="#">
+                  <?php if(isset($pageName)) echo $pageName; ?>
+              </a>
+            </li>
+          </ul>
         </nav>
-        <p class="copyright pull-right">
-            &copy; 2016 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
-        </p>
+      <!-- Please do not remove the backlink to us unless you support us at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+      <p class="no-margin-bottom">2019 &copy; 
+      Your company. Design by 
+      <a href="https://bootstrapious.com/p/bootstrap-4-dark-admin">
+      Bootstrapious
+      </a>.
+      </p>
     </div>
+  </div>
 </footer>

@@ -2,3 +2,13 @@ D2 Unknown database 'class190' in file C:\wamp64\www\class1901\connection.php at
 D2 Unknown database 'class190' in file C:\wamp64\www\class1901\connection.php at line 7
 D3 Data too long for column 'token' at row 1 in file C:\wamp64\www\class1901\forgot-password-supply-email-process.php at line 18
 D3 Data too long for column 'token' at row 1 in file C:\wamp64\www\class1901\forgot-password-supply-email-process.php at line 18
+D3 Field 'authority' doesn't have a default value in file C:\wamp64\www\class1901project\addStaff_process.php at line 12
+D3 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE 'authority' = 'staff'' at line 1 in file C:\wamp64\www\class1901project\addStaff_process.php at line 12
+D3 Field 'token' doesn't have a default value in file C:\wamp64\www\class1901project\addStaff_process.php at line 13
+D3 Field 'date' doesn't have a default value in file C:\wamp64\www\class1901project\addStaff_process.php at line 14
+D3 Field 'date' doesn't have a default value in file C:\wamp64\www\class1901project\addStaff_process.php at line 15
+D3 Incorrect date value: '03.25.19' for column 'date' at row 1 in file C:\wamp64\www\class1901project\addStaff_process.php at line 15
+D3 Incorrect date value: '03.25.19' for column 'date' at row 1 in file C:\wamp64\www\class1901project\addStaff_process.php at line 15
+D3 Duplicate entry 'makinsuroju@gmail.com' for key 'email' in file C:\wamp64\www\class1901project\addStaff_process.php at line 16
+D3 Duplicate entry 'michael_akin23@yahoo.com' for key 'email' in file C:\wamp64\www\class1901project\addStaff_process.php at line 16
+D3 Duplicate entry 'admin@stdavidslafiaji.com' for key 'email' in file C:\wamp64\www\class1901project\addStaff_process.php at line 16

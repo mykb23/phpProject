@@ -1,0 +1,14 @@
+/* your styles go here */
+.page-content {
+	background-color: white;
+}
+
+.page-header {
+	  background: #fff;
+	  color: #8a8d93;
+}
+
+.statistic-block {
+	background-color: white;
+	justify-content: center;
+}
