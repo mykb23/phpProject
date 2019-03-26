@@ -46,7 +46,7 @@
 								<input id="login-password" type="password" name="password" required data-msg="Please enter your password" class="input-material">
 								<label for="login-password" class="label-material">Password</label>
 							</div>
-							<button type="submit" name="login" class="btn btn-primary">Login</button>
+							<button type="submit" name="token" class="btn btn-primary">Login</button>
 							</form><a href="#" class="forgot-pass">Forgot Password?</a><br>
 						</div>
 						</div>
