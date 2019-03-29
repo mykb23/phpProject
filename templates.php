@@ -7,7 +7,7 @@
 	require_once 'templates/head.php'; 
 ?>
 <body>
-	<?php	require_once 'templates/sidebar.php'; ?>    
+	<?php	require_once 'templates/header.php'; ?>    
 	<?php	require_once 'templates/sidebar.php'; ?>    
 	<div class="wrapper">
 	    <div class="main-panel">

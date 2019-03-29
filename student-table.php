@@ -3,13 +3,14 @@ require_once 'connection.php';
 require_once 'key.php';
 require_once './templates/head.php';
 
-	$query = "SELECT * FROM `login` WHERE `authority` = 'staff'";
+	$query = "SELECT * FROM `login` WHERE `authority` = 'student'";
 	$result = mysqli_query($connection, $query);
 	
 	if($result){
 		$record = [];
 		while ($row = mysqli_fetch_assoc($result)) {
 			$record[] =  $row;
+			// echo "Customer Successfully Deleted";
 		}
 	}
 	else {

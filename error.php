@@ -21,21 +21,21 @@
 	require_once 'templates/head.php';
 ?>
 <body>
-	<div class="wrapper">
-		<?php	require_once 'templates/sidebar.php'; ?>    
-	    <div class="main-panel">
-	        <?php require_once 'templates/masthead.php'; ?>
-	        <div class="content">
-	            <div class="container-fluid">
-	                <div class="row">
-										<h1 id='pageName'><?php if(isset($pageName)) echo $pageName; ?></h1>
-										<?php echo $content; ?>
-	                </div>
-	            </div>
-	        </div>
-	        <?php require_once 'templates/footer-slogan.php'; ?>
-	    </div>
-	</div>
-</body>
-	<?php require_once 'templates/footer.php'; ?>
+      <?php require_once "templates/header.php"; ?>
+    <div class="d-flex align-items-stretch">
+		<!-- Sidebar Navigation-->
+      <?php require_once "templates/sidebar.php"; ?>
+		<!-- Sidebar Navigation end-->
+      	<div class="page-content">
+        	<div class="page-header">
+          		<div class="container-fluid">
+					<h1 id='pageName'><?php if(isset($pageName)) echo $pageName; ?></h1>
+					<?php echo $content; ?>
+          		</div>
+        	</div>
+			<?php require_once 'templates/footer-slogan.php'; ?>
+      	</div>
+    </div>
+  </body>
+    <?php require_once 'templates/footer.php'; ?>
 </html>

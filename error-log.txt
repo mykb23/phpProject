@@ -12,3 +12,8 @@ D3 Incorrect date value: '03.25.19' for column 'date' at row 1 in file C:\wamp64
 D3 Duplicate entry 'makinsuroju@gmail.com' for key 'email' in file C:\wamp64\www\class1901project\addStaff_process.php at line 16
 D3 Duplicate entry 'michael_akin23@yahoo.com' for key 'email' in file C:\wamp64\www\class1901project\addStaff_process.php at line 16
 D3 Duplicate entry 'admin@stdavidslafiaji.com' for key 'email' in file C:\wamp64\www\class1901project\addStaff_process.php at line 16
+D3 Duplicate entry 'admin@stdavidslafiaji.com' for key 'email' in file C:\wamp64\www\class1901project\add-staff-process.php at line 17
+D3 Duplicate entry 'admin@stdavidslafiaji.com' for key 'email' in file C:\wamp64\www\class1901project\add-staff-process.php at line 17
+D3 Duplicate entry 'makinsuroju@gmail.com' for key 'email' in file C:\wamp64\www\class1901project\add-staff-process.php at line 17
+D3 Duplicate entry 'makinsuroju@gmail.com' for key 'email' in file C:\wamp64\www\class1901project\add-staff-process.php at line 19
+D3 Duplicate entry 'makinsuroju@gmail.com' for key 'email' in file C:\wamp64\www\class1901project\add-staff-process.php at line 19

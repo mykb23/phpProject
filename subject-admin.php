@@ -1,8 +1,8 @@
 <?php
 require_once 'connection.php';
 require_once 'key.php';
-$pageName = "Staff Management"; 
-$title = "Staff Administration";
+$pageName = "Subject Management"; 
+$title = "Subject Administration";
 $addmsg = "";
 $delmsg = "";
 $errmsg = "";
@@ -10,14 +10,14 @@ if(isset($_SESSION['create']) && $_SESSION['create']){
   unset($_SESSION['create']);
   $addmsg = "
     <div class='alert alert-success text-center row'>
-        Staff record has successfully been created!
+        Subject successfully added!
     </div><br/>
   ";
 }elseif(isset($_SESSION['err']) && $_SESSION['err']) {
   unset($_SESSION['err']);
   $errmsg = "
     <div class='alert alert-danger text-center row'>
-        Staff record already exist!
+        Subject already exist!
     </div><br/>
   ";
 }
@@ -26,7 +26,7 @@ if(isset($_SESSION['message']) && $_SESSION['message']){
   unset($_SESSION['message']);
   $delmsg = "
     <div class='alert alert-success text-center row'>
-        Staff record has successfully been deleted!
+        Subject successfully deleted!
     </div><br/>
   ";
 }
@@ -53,7 +53,7 @@ require_once 'templates/head.php';
                                     <?php echo $errmsg; ?>
                                     <?php echo $addmsg; ?>
                                 <div class="progress-details d-flex align-items-end justify-content-between">
-                                        <?php require_once 'add-staff.php' ?>
+                                        <?php require_once 'add-subject.php' ?>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ require_once 'templates/head.php';
                             <div class="statistic-block block" id="block">
                                         <?php echo $delmsg; ?>
                                 <div class="progress-details d-flex align-items-end justify-content-between">
-                                        <?php require_once 'staff-table.php' ?>
+                                        <?php require_once 'subject-table.php' ?>
                                 </div>
                             </div>
                         </div>

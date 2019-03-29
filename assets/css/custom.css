@@ -8,7 +8,8 @@
 	  color: #8a8d93;
 }
 
-.statistic-block {
-	background-color: white;
-	justify-content: center;
+#block {
+	/* color: #fff; */
+	background-color: #fff;
+	/* justify-content: center; */
 }

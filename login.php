@@ -16,7 +16,12 @@
 					$_SESSION['login'] = $user;
 				}
 				header("Location: home.php");
+				header("Location: staff-dashboard.php");
 				exit;
+				// if($user['id']) {
+				// 	$user['right'] = $row['right'];
+				// 	header("Location: home-staff.php");
+				// }
 			}
 			else {
 				$_SESSION['loginFailed'] = true;
