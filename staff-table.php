@@ -1,6 +1,7 @@
 <?php
 require_once 'connection.php';
 require_once 'key.php';
+require_once 'key-admin.php';
 require_once './templates/head.php';
 
 	$query = "SELECT * FROM `login` WHERE `authority` = 'staff'";

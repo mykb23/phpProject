@@ -1,6 +1,7 @@
 <?php
 require_once 'connection.php';
 require_once 'key.php';
+require_once 'key-staff.php';
 require_once './templates/head.php';
 
 	$query = "SELECT * FROM `subjects`";
@@ -27,13 +28,14 @@ require_once './templates/head.php';
 
 			$table .= "<tr>
 					<td>{$aRecord['id']}</td> <td>{$aRecord['course']}</td> 
-					<td>{$aRecord['code']}</td> 
-					<td><a href='edit-subject.php?id=".$aRecord['id']."'><button class='btn btn-info'>Edit</button></a></td> 
-					<td><a href='delete-subject.php?id=".$aRecord['id']."'><button class='btn btn-danger'>Delete</button></a></td> 
+					<td>{$aRecord['code']}</td>
+					<td><a href='subject-process.php?edit=".$aRecord['id']."'><button class='btn btn-warning'>Edit</button></a></td> 
+					<td><a href='subject-process.php?delete=".$aRecord['id']."'><button class='btn btn-danger'>Delete</button></a></td> 
 				</tr>";
+			}
 		}
-	}
-	$table .= "</table>";
-	echo $table;
+		$table .= "</table>";
+		echo $table;
 
+	
 ?>

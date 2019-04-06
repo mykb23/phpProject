@@ -1,5 +1,7 @@
 <?php
 require_once 'connection.php';
+require_once 'key.php';
+require_once 'key-admin.php';
 $email = $_POST["mail"];
 $pass = $_POST["pass"];
 $pass = md5(SALT.$pass);

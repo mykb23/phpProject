@@ -2,10 +2,10 @@
 require_once 'connection.php';
 require_once 'key.php';
 require_once 'key-staff.php';
-require_once 'student-process.php';
+// require_once 'result-process.php';
 
-$pageName = "Student Management"; 
-$title = "Student Administration";
+$pageName = "Result Management"; 
+$title = "Result Administration";
 $addmsg = "";
 $delmsg = "";
 $errmsg = "";
@@ -46,9 +46,6 @@ require_once 'templates/head.php';
         <div class="page-header">
           <div class="container-fluid">
 			<h1 id='pageName'><?php if(isset($pageName)) echo $pageName; ?></h1>
-                                    <?php echo $errmsg; ?>
-                                    <?php echo $addmsg; ?>
-                                    <?php echo $delmsg; ?>
           </div>
         </div>
 			<section class="no-padding-top no-padding-bottom">
@@ -56,8 +53,10 @@ require_once 'templates/head.php';
                     <div class="row">
                         <div class="col-md-6">
                             <div class="statistic-block block">
+                                    <?php echo $errmsg; ?>
+                                    <?php echo $addmsg; ?>
                                 <div class="progress-details d-flex align-items-end justify-content-between">
-                                  <div class="container-fluid">
+                                  <!-- <div class="container-fluid">
                                     <h3 class="mb-3 text-white">Create A New Student</h3>
                                     <div class="row">
                                       <div class="col-md-12 col-lg-12 mb-2">
@@ -73,15 +72,18 @@ require_once 'templates/head.php';
                                           <button type="submit" name="send" class="btn btn-info">Create</button>
                                         </form>
                                       </div>
-                                    </div>
+                                    </div> -->
+                                    
                                 </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="statistic-block block">
+
+                                        <?php echo $delmsg; ?>
                                 <div class="progress-details d-flex align-items-end justify-content-between">
-                                        <?php echo $table; ?>
+                                        <!-- <?php echo $table; ?> -->
                                 </div>
                             </div>
                         </div>

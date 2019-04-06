@@ -1,6 +1,8 @@
 <?php
 require_once 'connection.php';
 require_once 'key.php';
+require_once 'key-admin.php';
+
 $pageName = "Staff Management"; 
 $title = "Staff Administration";
 $addmsg = "";

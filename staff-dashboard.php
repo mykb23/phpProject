@@ -54,7 +54,7 @@
 					<div class="progress-details d-flex align-items-end justify-content-between">
 						<div class="title">
 						<div class="icon"><i class="icon-padnote"></i></div><strong>Create New Subject</strong>
-							<a href="student-admin.php"><button class="btn btn-info">Create</button></a>
+							<a href="subject-admin.php"><button class="btn btn-info">Create</button></a>
 						</div>
 					</div>
 					</div>
@@ -64,9 +64,9 @@
 					<div class="progress-details d-flex align-items-end justify-content-between">
 						<div class="title">
 						<div class="icon"><i class="icon-padnote"></i></div><strong>Edit, Update or Delete Subject</strong>
-							<a href="student-admin.php"><button class="btn btn-primary mr-2">Edit</button></a>
-							<a href="student-admin.php"><button class="btn btn-warning mr-2">Update</button></a>
-							<a href="student-admin.php"><button class="btn btn-danger">Delete</button></a>
+							<a href="subject-admin.php"><button class="btn btn-primary mr-2">Edit</button></a>
+							<a href="subject-admin.php"><button class="btn btn-warning mr-2">Update</button></a>
+							<a href="subject-admin.php"><button class="btn btn-danger">Delete</button></a>
 						</div>
 					</div>
 					</div>

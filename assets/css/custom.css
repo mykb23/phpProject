@@ -8,8 +8,11 @@
 	  color: #8a8d93;
 }
 
-#block {
-	/* color: #fff; */
-	background-color: #fff;
-	/* justify-content: center; */
+.statistic-block {
+	/* background-color: #8a8d93 !important;
+	color: #ff0000 !important; */
 }
+
+/* padding: 20px;
+background: #2d3035;
+color: #8a8d93; */
