@@ -73,20 +73,35 @@ require_once 'templates/head.php';
                                         </form>
                                       </div>
                                     </div> -->
-                                    
+                                    <form action="subject-process.php" class="p-1" method="POST">
+                                        <div class="form-group">
+                                            <!-- <input type="hidden" class="form-control" name="id" id="labelCourse"> -->
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="labelCourse">Course</label>
+                                            <input type="text" class="form-control" name="course" id="labelCourse" 
+                                            value="" placeholder="Course">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="labelCode" class="label-material">Course Code</label>
+                                            <input type="text" class="form-control " name="code" id="labelCode" 
+                                            value="" placeholder="Course Code">
+                                        </div>
+                                        <div class="form-group">
+                                        <?php
+                                            if ($update == true):
+                                        ?>
+                                          <button type="submit" name="update" class="btn btn-info">Update</button>
+                                            <?php else: ?>
+                                            <button type="submit" name="send" class="btn btn-primary">Create</button>
+                                          <?php endif ?>
+                                        </div>
+                                    </form> 
                                 </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="statistic-block block">
-
-                                        <?php echo $delmsg; ?>
-                                <div class="progress-details d-flex align-items-end justify-content-between">
-                                        <!-- <?php echo $table; ?> -->
-                                </div>
-                            </div>
-                        </div>
+                      
                     </div>
                 </div>
             </section>

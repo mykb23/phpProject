@@ -17,3 +17,8 @@ D3 Duplicate entry 'admin@stdavidslafiaji.com' for key 'email' in file C:\wamp64
 D3 Duplicate entry 'makinsuroju@gmail.com' for key 'email' in file C:\wamp64\www\class1901project\add-staff-process.php at line 17
 D3 Duplicate entry 'makinsuroju@gmail.com' for key 'email' in file C:\wamp64\www\class1901project\add-staff-process.php at line 19
 D3 Duplicate entry 'makinsuroju@gmail.com' for key 'email' in file C:\wamp64\www\class1901project\add-staff-process.php at line 19
+D3 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in file C:\wamp64\www\class1901project\student-bio-process.php at line 20
+D3 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in file C:\wamp64\www\class1901project\student-bio-process.php at line 20
+D3 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in file C:\wamp64\www\class1901project\student-bio-process.php at line 20
+D3 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in file C:\wamp64\www\class1901project\student-bio-process.php at line 24
+D3 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in file C:\wamp64\www\class1901project\student-bio-process.php at line 24

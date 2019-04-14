@@ -38,8 +38,8 @@
 					<div class="statistic-block block">
 					<div class="progress-details d-flex align-items-end justify-content-between">
 						<div class="title">
-						<div class=""><i class="icon-user"></i></div><strong>Update or Delete Student</strong>
-							<a href="student-admin.php"><button class="btn btn-warning mr-2">Update</button></a>
+						<div class=""><i class="icon-user"></i></div><strong>Delete A Student</strong>
+							<!-- <a href="student-admin.php"><button class="btn btn-warning mr-2">Update</button></a> -->
 							<a href="student-admin.php"><button class="btn btn-danger">Delete</button></a>
 						</div>
 					</div>

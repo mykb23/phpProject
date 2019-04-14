@@ -30,7 +30,7 @@ if($update == true):
                                                             // if($update == true):
                                                             ?> -->
                                                               <button type="submit" name="send" class="btn btn-info">Update</button>
-                                                            <!-- <?php  -->
+ $date = date("Y-m-d H:i:s");                                                           <!-- <?php  -->
                                                             // else: 
                                                             // ?>
                                                             <!-- <?php -->

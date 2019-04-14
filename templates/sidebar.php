@@ -11,7 +11,7 @@
                 $additionalMenu .= "
                 <li class='active'>
                     <a href='home.php'>
-                        <i class='icon-home'></i>
+                        <i class='fa fa-home'></i>
                         Home
                     </a>
                 </li>
@@ -27,7 +27,7 @@
                 $additionalMenu .= "
                 <li class='active'>
                     <a href='staff-dashboard.php'>
-                        <i class='icon-home'></i>
+                        <i class='fa fa-home'></i>
                         Home
                     </a>
                 </li>
@@ -52,19 +52,25 @@
 				";
 			}
 			if($row[0]['authority'] == "student"){
-				$additionalMenu .= "
-					<li class='active'>
-            <a href='view-result.php'>
-                <i class='icon-padnote'></i>
-                <p>View Result</p>
-            </a>
-        	</li>
-        	<li class='active'>
-            <a href='https://paystack.com/pay/aet' target='_blank'>
-                <i class='icon-bill'></i>
-                <p>Payment</p>
-            </a>
-        	</li>
+                $additionalMenu .= "
+                <li class='active'>
+                    <a href='student-dashboard.php'>
+                        <i class='fa fa-home'></i>
+                        Home
+                    </a>
+                </li>
+				<li class='active'>
+                    <a href='view-result.php'>
+                        <i class='icon-padnote'></i>
+                        View Result
+                    </a>
+                </li>
+                <li class='active'>
+                    <a href='https://paystack.com/pay/aet' target='_blank'>
+                        <i class='fa fa-credit-card'></i>
+                        Payment
+                    </a>
+                </li>
 				";
 			}
 		}
@@ -76,13 +82,13 @@
         $additionalMenu
         <li class='active'>
             <a href='password-reset.php'>
-                <i class='fa fa-lock'></i>
+                <i class='fa fa-key' aria-hidden='true'></i>
                   Change Password
             </a>
         </li>
         <li class='active'>
             <a href='logout.php'>
-                <i class='icon-logout'></i>
+                <i class='fa fa-sign-out'></i>
                 Logout
             </a>
         </li>

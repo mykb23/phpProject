@@ -20,7 +20,7 @@
             <button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>
           </div>
             <!-- Log out               -->
-            <div class="list-inline-item logout"><a id="logout" href="logout.php" class="nav-link"> <span class="d-none d-sm-inline">Logout </span><i class="icon-logout"></i></a></div>
+            <div class="list-inline-item logout"><a id="logout" href="logout.php" class="nav-link"> <span class="d-none d-sm-inline">Logout </span><i class="fa fa-sign-out"></i></a></div>
           </div>
         </div>
       </nav>

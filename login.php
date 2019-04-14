@@ -13,14 +13,32 @@
 				while ($row = mysqli_fetch_assoc($result)) {
 					$user["id"] =  $row['id'];
 					$user["password"] =  $row['password'];
+					$user["role"] = $row['authority'];
+					$user["email"] =  $row['email'];
 					$_SESSION['login'] = $user;
 				}
-				header("Location: home.php");
-				header("Location: staff-dashboard.php");
+				
+				switch ($user["role"]) {
+					case 'student':
+					$redirect = 'student-dashboard.php';
+					break;
+					case 'staff':
+					$redirect = 'staff-dashboard.php';
+					break;
+					case 'admin':
+					$redirect = 'home.php';
+					break;
+				}
+				
+				header('Location: ' . $redirect);
+				// var_dump($user["role"]); exit;
+				// header("Location: home.php");
+				// header("Location: staff-dashboard.php");
+				// header("Location: student-dashboard.php");
 				exit;
 				// if($user['id']) {
 				// 	$user['right'] = $row['right'];
-				// 	header("Location: home-staff.php");
+				// 	header("Location: staff-dashboard.php");
 				// }
 			}
 			else {
