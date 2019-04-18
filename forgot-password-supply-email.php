@@ -32,25 +32,25 @@
 	        <div class="content">
 	            <div class="container-fluid">
 	                <div class="row">
-										<h1 id='pageName'><?php if(isset($pageName)) echo $pageName; ?><small> supply email associated with your account</small></h1>
-										<form method="post" action="forgot-password-supply-email-process.php">
-												<?php echo $noEmail; ?>
-												<?php echo $tokenSent; ?>
-												<div class="row">
-													<label class="col-md-4">
-														Email
-													</label>
-													<div class="col-md-8">
-														<input class="form-control" type="email" name="email">
-													</div>
-												</div><br/>
-												<div class="row">												
-													<div class="col-md-8 col-md-offset-4">
-														<button class="btn btn-primary btn-sm" type="submit" name="token" value="<?php echo $_SESSION['token'] ?>">Submit</button>
-													</div>
-												</div><br/>
-											</form>
-										
+						<h1 id='pageName'><?php if(isset($pageName)) echo $pageName; ?><small> supply email associated with your account</small></h1>
+						<form method="post" action="forgot-password-supply-email-process.php">
+								<?php echo $noEmail; ?>
+								<?php echo $tokenSent; ?>
+								<div class="row">
+									<label class="col-md-4">
+										Email
+									</label>
+									<div class="col-md-8">
+										<input class="form-control" type="email" name="email">
+									</div>
+								</div><br/>
+								<div class="row">												
+									<div class="col-md-8 col-md-offset-4">
+										<button class="btn btn-primary btn-sm" type="submit" name="token" value="<?php echo $_SESSION['token'] ?>">Submit</button>
+									</div>
+								</div><br/>
+							</form>
+						
 	                </div>
 	            </div>
 	        </div>

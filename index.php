@@ -5,11 +5,20 @@
 	$title = "School Portal";
 	$_SESSION['token'] = TOKEN;
 	$loginFailed = "";
+	$addmsg = "";
 	if(isset($_SESSION['loginFailed']) && $_SESSION['loginFailed']){
 		unset($_SESSION['loginFailed']);
 		$loginFailed = "
 			<div class='alert alert-danger text-center row'>
 				Login Failed
+			</div><br/>
+		";
+	}
+	if(isset($_SESSION['change']) && $_SESSION['change']){
+		unset($_SESSION['change']);
+		$addmsg = "
+			<div class='alert alert-success text-center row'>
+					Password successfully changed!
 			</div><br/>
 		";
 	}
@@ -25,6 +34,8 @@
 							<div class="content">
 								<div class="logo">
 									<h1 id='pageName'><?php if(isset($pageName)) echo $pageName; ?></h1>
+									<?php echo $addmsg; ?>
+
 								<!-- <h1>School Portal</h1> -->
 								</div>
 								<p>Login into your account.</p>
@@ -46,7 +57,7 @@
 										<label for="login-password" class="label-material">Password</label>
 									</div>
 									<button type="submit" name="token" class="btn btn-primary">Login</button>
-								</form><a href="#" class="forgot-pass">Forgot Password?</a><br>
+								</form><a href="forgot-password-supply-email.php" class="forgot-pass">Forgot Password?</a><br>
 							</div>
 						</div>
 					</div>

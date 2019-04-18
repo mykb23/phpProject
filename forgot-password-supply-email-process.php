@@ -12,7 +12,7 @@
 				for ($i=0; $i < 16; $i++) { 
 					$token .= chr(rand(65, 90));
 				}
-				$query = "update login SET token = '$token'WHERE email = '$email'";
+				$query = "update login SET token = '$token' WHERE email = '$email'";
 				$result = mysqli_query($connection, $query);
 				if(!$result){
 					errorMove("D3 ".mysqli_error($connection)." in file ".__FILE__." at line ".__LINE__);

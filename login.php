@@ -31,15 +31,8 @@
 				}
 				
 				header('Location: ' . $redirect);
-				// var_dump($user["role"]); exit;
-				// header("Location: home.php");
-				// header("Location: staff-dashboard.php");
-				// header("Location: student-dashboard.php");
 				exit;
-				// if($user['id']) {
-				// 	$user['right'] = $row['right'];
-				// 	header("Location: staff-dashboard.php");
-				// }
+
 			}
 			else {
 				$_SESSION['loginFailed'] = true;

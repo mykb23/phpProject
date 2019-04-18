@@ -109,7 +109,7 @@ if(isset($_SESSION['update']) && $_SESSION['update']){
 									<div class="progress-details d-flex align-items-end justify-content-between">
 										<div class="title">
 										<div class="icon"><i class="icon-padnote"></i></div><strong>View Your Result</strong>
-										<a href="staff-admin.php"><button class="btn btn-info">View</button></a>
+										<a href="view-result.php"><button class="btn btn-info">View</button></a>
 										</div>
 									</div>
 								</div>
@@ -120,7 +120,7 @@ if(isset($_SESSION['update']) && $_SESSION['update']){
 										<div class="title">
 										
 										<div class="icon"><i class='fa fa-credit-card'></i></div><strong>Make Payment</strong>
-										<a href="staff-admin.php"><button class="btn btn-info">Payment</button></a>
+										<a href="#"><button class="btn btn-info">Payment</button></a>
 										</div>
 									</div>
 								</div>
