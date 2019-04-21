@@ -8,7 +8,7 @@
 	define('TOKEN', md5(rand(1, 1000)));
 	define('DEVELOPMENT', true);
 	if(DEVELOPMENT){
-		define('URL', 'http://localhost/class1901/');
+		define('URL', 'http://localhost/class1901project/');
 	}
 	else {
 		define('URL', '');

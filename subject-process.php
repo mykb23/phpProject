@@ -6,6 +6,7 @@ require_once 'key-staff.php';
 $update = false;
 $course ="";
 $code ="";
+$unit ="";
 $id ="";
 
 	$query = "SELECT * FROM `subjects`";
@@ -23,17 +24,16 @@ $id ="";
 	$table = "
 		<table class='table table-bordered'>
 			<tr class='bg-dark text-white'>
-				<th>ID</th> <th>Course</th> <th>Code</th> <th>Action</th> 
+				<th>Course</th> <th>Code</th> <th>Unit</th> <th>Action</th> 
 			</tr>
 	";
 	if($record){
 		foreach ($record as $aRecord) {
 
 			$table .= "<tr>
-					<td>{$aRecord['id']}</td> <td>{$aRecord['course']}</td> 
-					<td>{$aRecord['code']}</td>
+					<td>{$aRecord['course']}</td> <td>{$aRecord['code']}</td> <td>{$aRecord['course unit']}</td> 
 					<td>
-					<a href='subject-admin.php?edit=".$aRecord['id']."&course=".$aRecord['course']."&code=".$aRecord['code']."'>
+					<a href='subject-admin.php?edit=".$aRecord['id']."&course=".$aRecord['course']."&code=".$aRecord['code']."&unit=".$aRecord['course unit']."'>
 					<i class='fa fa-pencil text-info pr-2' aria-hidden='true' style='font-size:20px;'></i>
 					</a> 
 				
@@ -49,8 +49,9 @@ $id ="";
 if(isset($_POST['send'])) {
 	$course = $_POST["course"];
 	$code = $_POST["code"];
+	$unit = $_POST["unit"];
 
-		$query = "INSERT INTO subjects (course, code) VALUES ('$course', '$code')";
+		$query = "INSERT INTO subjects (course, code, course unit) VALUES ('$course', '$code', '$unit')";
 		$result = mysqli_query($connection, $query);
 		if($result){
 			$_SESSION['create'] = true;
@@ -75,6 +76,7 @@ if (isset($_GET['edit'])) {
 		$id = $_GET['edit'];
 		$course =$_GET['course'];
 		$code =$_GET['code'];
+		$unit = $_GET['unit'];
 		$update = true;
 	}
 
@@ -82,8 +84,9 @@ if(isset($_POST['update'])) {
 		$id =$_POST['id'];
 		$course =$_POST['course'];
 		$code =$_POST['code'];
+		$unit =$_POST['unit'];
 		
-		$query = "UPDATE `subjects` SET `course`= '$course',`code`= '$code' WHERE `id` = $id";
+		$query = "UPDATE `subjects` SET `course`= '$course',`code`= '$code', `course unit`= '$unit' WHERE `id` = $id";
 		$result = mysqli_query($connection, $query);
 
 		$_SESSION['update'] = true;

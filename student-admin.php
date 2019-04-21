@@ -53,41 +53,48 @@ require_once 'templates/head.php';
         </div>
 			<section class="no-padding-top no-padding-bottom">
 				<div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="statistic-block block">
-                                <div class="progress-details d-flex align-items-end justify-content-between">
-                                  <div class="container-fluid">
-                                    <h3 class="mb-3 text-white">Create A New Student</h3>
-                                    <div class="row">
-                                      <div class="col-md-12 col-lg-12 mb-2">
-                                        <form action="student-process.php" class="p-1" method="POST">
-                                          <div class="form-group">
-                                              <label for="labelEmail">Email</label>
-                                              <input type="email" class="form-control" name="mail" id="labelEmail" placeholder="Email">
-                                          </div>
-                                          <div class="form-group">
-                                              <label for="labelPassword" class="label-material">Password</label>
-                                              <input type="password" class="form-control " name="pass" id="labelPassword" placeholder="Password">
-                                          </div>
-                                          <button type="submit" name="send" class="btn btn-info">Create</button>
-                                        </form>
-                                      </div>
-                                    </div>
-                                </div>
-                                </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="statistic-block block">
+                        <div class="progress-details d-flex align-items-end justify-content-between">
+                          <div class="container-fluid">
+                            <h3 class="mb-3 text-white">Create A New Student</h3>
+                            <div class="row">
+                              <div class="col-md-12 col-lg-12 mb-2">
+                                <form action="student-process.php" class="p-1" method="POST">
+                                  <div class="form-group">
+                                      <label for="labelEmail">Email</label>
+                                      <input type="email" class="form-control" name="mail" id="labelEmail" placeholder="Email">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="labelPassword" class="label-material">Password</label>
+                                      <input type="password" class="form-control " name="pass" id="labelPassword" placeholder="Password">
+                                  </div>
+                                  <button type="submit" name="send" class="btn btn-info">Create</button>
+                                </form>
+                              </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="statistic-block block">
-                                <div class="progress-details d-flex align-items-end justify-content-between">
-                                        <?php echo $table; ?>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="statistic-block block">
+                        <div class="progress-details d-flex align-items-end justify-content-between">
+                        <div class="container-fluid">
+                          <h3 class="mb-3 text-white">Create A New Student</h3>
+                            <div class="row">
+                              <div class="col-md-12 col-lg-12 mb-2">
+                                <?php echo $table; ?>
+                              </div>
+                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 			<?php require_once 'templates/footer-slogan.php'; ?>
       </div>
     </div>

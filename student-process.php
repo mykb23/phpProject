@@ -21,14 +21,15 @@ require_once './templates/head.php';
 	$table = "
 		<table class='table table-bordered'>
 			<tr class='bg-dark text-white'>
-				<th>ID</th> <th>Right</th> <th>Email</th> <th>Action</th>
+				<th>ID</th><th>Right</th><th>Email</th><th>Action</th>
 			</tr>
 	";
 	if($record){
 		foreach ($record as $aRecord) {
 
 			$table .= "<tr>
-					<td>{$aRecord['id']}</td> <td>{$aRecord['authority']}</td> 
+					<td>{$aRecord['id']}</td> 
+					<td>{$aRecord['authority']}</td> 
 					<td>{$aRecord['email']}</td> 
                     <td><a href='student-process.php?delete=".$aRecord['id']."'>
 					<i class='fa fa-trash text-danger' aria-hidden='true' style='font-size:20px;'></i>                    

@@ -66,7 +66,7 @@
                     </a>
                 </li>
                 <li class='active'>
-                    <a href='https://paystack.com/pay/aet' target='_blank'>
+                    <a href='https://paystack.com/pay/schfee' target='_blank'>
                         <i class='fa fa-credit-card'></i>
                         Payment
                     </a>

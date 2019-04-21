@@ -80,12 +80,12 @@
 					<div class="progress-details d-flex align-items-end justify-content-between">
 						<div class="title">
 						<div class="icon"><i class="icon-form-1"></i></div><strong>Create New Student Result</strong>
-							<a href="staff-admin.php"><button class="btn btn-info">Create</button></a>
+							<a href="result-admin.php"><button class="btn btn-info">Create</button></a>
 						</div>
 					</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-12">
+				<!-- <div class="col-md-6 col-sm-12">
 					<div class="statistic-block block">
 					<div class="progress-details d-flex align-items-end justify-content-between">
 						<div class="title">
@@ -95,7 +95,7 @@
 						</div>
 					</div>
 					</div>
-				</div>
+				</div> -->
 			</section>
 			<?php require_once 'templates/footer-slogan.php'; ?>
       </div>

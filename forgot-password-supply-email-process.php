@@ -22,7 +22,7 @@
 					mail($email, "Password Reset Token", $link);
 				}
 				$_SESSION['tokenSent'] = "Please check your email for instruction on how to change your password";
-				if(DEVELOPMENT) $_SESSION['tokenSent'] .=" $link"; 
+				if(DEVELOPMENTl) $_SESSION['tokenSent'] .=" $link"; 
 				header("Location: forgot-password-supply-email.php");
 			}
 			else {

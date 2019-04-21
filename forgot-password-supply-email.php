@@ -39,32 +39,26 @@
           </div>
         </div>
         <section class="no-padding-top no-padding-bottom">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <div class="statistic-block block">
-                  <div class="progress-details d-flex align-items-end justify-content-between">
-                    <!-- <h1 id='pageName'><?php if(isset($pageName)) echo $pageName; ?><small> supply email associated with your account</small></h1> -->
-                      <form method="post" action="forgot-password-supply-email-process.php">
-                          <div class="row">
-                            <label class="col-md-4 col-lg-2">
-                              Email
-                            </label>
-                            <div class="col-md-8 col-lg-10">
-                              <input class="form-control" type="email" name="email">
-                            </div>
-                          </div><br/>
-                          <div class="row">                       
-                            <div class="col-md-8 col-md-offset-4">
-                              <button class="btn btn-primary btn-sm" type="submit" name="token" value="<?php echo $_SESSION['token'] ?>">Submit</button>
-                            </div>
-                          </div><br/>
-                        </form>
-                    
+          <div class="container">
+            <div class="col-md-12">
+              <form method="post" action="forgot-password-supply-email-process.php">
+                <div class="col-sm-6 col-md-8">
+                  <div class="row">
+                    <div class="col-2">
+                          <label>Email</label>
+                    </div>
+                    <div class="col-10">
+                          <input class="form-control" type="email" name="email">
+                    </div>
                   </div>
                 </div>
-              </div>
-          </section>
+                <div class="col-sm-6 col-md-12 mt-2">
+                    <button class="btn btn-primary btn-sm" type="submit" name="token" value="<?php echo $_SESSION['token'] ?>">Submit</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </section>
       </div>
         <?php require_once 'templates/footer-slogan.php'; ?>
     </div>

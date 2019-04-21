@@ -120,7 +120,7 @@ if(isset($_SESSION['update']) && $_SESSION['update']){
 										<div class="title">
 										
 										<div class="icon"><i class='fa fa-credit-card'></i></div><strong>Make Payment</strong>
-										<a href="#"><button class="btn btn-info">Payment</button></a>
+										<a href="https://paystack.com/pay/schfee" target="_blank"><button class="btn btn-info">Payment</button></a>
 										</div>
 									</div>
 								</div>

@@ -1,5 +1,6 @@
 <?php
 	require_once 'connection.php';
+	
 	if(isset($_POST['token']) && $_POST['token'] = $_SESSION['token']){
 		unset($_SESSION['token']);
 		$username = $_POST['studentNo'];

@@ -22,3 +22,5 @@ D3 You have an error in your SQL syntax; check the manual that corresponds to yo
 D3 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in file C:\wamp64\www\class1901project\student-bio-process.php at line 20
 D3 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in file C:\wamp64\www\class1901project\student-bio-process.php at line 24
 D3 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in file C:\wamp64\www\class1901project\student-bio-process.php at line 24
+D3 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['Select', 'Select', 'Select', 'Select', 'Select', 'Select', 'Select'],
+       ' at line 3 in file C:\wamp64\www\class1901project\result-process.php at line 48

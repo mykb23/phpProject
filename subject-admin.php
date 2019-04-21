@@ -99,6 +99,11 @@ require_once 'templates/head.php';
                                                               value="<?php echo $code ?>" placeholder="Course Code">
                                                           </div>
                                                           <div class="form-group">
+                                                              <label for="labelUnit" class="label-material">Course Unit</label>
+                                                              <input type="text" class="form-control " name="unit" id="labelUnit" 
+                                                              value="<?php echo $unit ?>" placeholder="Course Unit">
+                                                          </div>
+                                                          <div class="form-group">
                                                           <?php
                                                               if ($update == true):
                                                           ?>

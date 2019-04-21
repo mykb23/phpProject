@@ -1,6 +1,6 @@
 <?php
     require_once 'connection.php';
-	require_once 'key.php';
+    require_once 'key.php';
     $pageName = "Change Password"; 
     $title = "Password Reset";
     $emptyMsg = "";
@@ -9,8 +9,8 @@
     if(isset($_SESSION['changeEmpty']) && $_SESSION['changeEmpty']){
         unset($_SESSION['changeEmpty']);
         $emptyMsg = "
-          <div class='alert alert-success text-center row'>
-                Password cannot be empty!
+          <div class='alert alert-warning text-center row'>
+                Password Fields cannot be empty!
           </div><br/>
         ";
       }
@@ -18,13 +18,12 @@
         unset($_SESSION['changeError']);
         $errMsg = "
           <div class='alert alert-danger text-center row'>
-              Password do not match!
+              Password Fields do not match!
           </div><br/>
         ";
       }
 
     require_once 'templates/head.php';
-	// $_SESSION['login'];
 ?>
 <body>
       <?php require_once "templates/header.php"; ?>
@@ -46,11 +45,6 @@
 											<?php echo $emptyMsg; ?>
 											<?php echo $errMsg; ?>
                                 <form action="password-reset-process.php" class="p-1 is-valid" method="POST">
-                                <!-- <input type="text" value="<?php echo $_SESSION['login']['id']; ?>">
-                                    <div class="form-group">
-                                        <label for="labelCurrentPassword">Current Password</label>
-                                        <input type="password" class="form-control" name="old" id="labelCurrentPassword" placeholder="Current Password" require>
-                                    </div> -->
                                     <div class="form-group">
                                         <label for="labelNewPassword" class="label-material">New Password</label>
                                         <input type="password" class="form-control " name="new" id="labelNewPassword" placeholder="New Password" require>

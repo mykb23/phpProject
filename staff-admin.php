@@ -66,7 +66,7 @@ require_once 'templates/head.php';
       <section class="no-padding-top no-padding-bottom align-items-center" id="no-align">
 				<div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-12">
                             <div class="statistic-block block" id="block">
                                         <?php echo $delmsg; ?>
                                 <div class="progress-details d-flex align-items-end justify-content-between">

@@ -29,7 +29,7 @@ require_once './templates/head.php';
 			$table .= "<tr>
 					<td>{$aRecord['id']}</td> <td>{$aRecord['authority']}</td> 
 					<td>{$aRecord['email']}</td> 
-					<td><a href='delete.php?id=".$aRecord['id']."'><button class='btn btn-danger'>Delete</button></a></td> 
+					<td><i class='fa fa-trash text-danger' aria-hidden='true' style='font-size:20px;'></i><a href='delete.php?id=".$aRecord['id']."'></a></td> 
 				</tr>";
 		}
 	}

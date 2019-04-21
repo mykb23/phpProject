@@ -30,23 +30,23 @@
 					<div class="row">
 						<div class="col-md-6 col-lg-12 col-sm-12">
 							<div class="statistic-block block">
-								<!-- <div class="icon"><i class="icon-user"></i></div> -->
-								<strong>Your Result</strong>
+								<strong>Your <?php require_once 'student-result.php'; echo $record[0]['semester']; ?> Semester Result</strong>
 								<div class="progress-details d-flex align-items-end justify-content-between">
 									<div class="container-fluid">
 										<div class="row">
 											<div class="col-md-12">
-											
+												<?php require_once 'student-result.php'; 
+														echo $table;
+														
+												?>
 											</div>
-										</div>
-										
+										</div>	
 									</div>
 								</div>
 							</div>
+						</div>
 					</div>
-					</div>
-				</div>
-				
+				</div>	
 			</section>
 			<?php require_once 'templates/footer-slogan.php'; ?>
       </div>
